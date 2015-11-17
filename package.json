@@ -1,0 +1,14 @@
+{
+  "name": "language-antlers",
+  "version": "0.1.0",
+  "description": "Syntax highlighting for Statamic templates",
+  "keywords": [
+  ],
+  "repository": "https://github.com/addisonhall/language-antlers",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
