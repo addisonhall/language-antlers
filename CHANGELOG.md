@@ -1,3 +1,6 @@
+## 0.2.2 - Screenshot
+* Fixed screenshot link
+
 ## 0.2.1 - Screenshot
 * Adding screenshot
 
