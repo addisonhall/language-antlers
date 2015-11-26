@@ -1,3 +1,6 @@
+## 0.2.3 - No to PHP!
+* Don't use Antlers for PHP files
+
 ## 0.2.2 - Screenshot
 * Fixed screenshot link
 
