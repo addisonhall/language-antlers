@@ -1,7 +1,6 @@
 fileTypes: [
   "html"
   "htm"
-  "php"
   "xhtml"
 ]
 name: "Antlers (Statamic Syntax)"
