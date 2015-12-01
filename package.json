@@ -1,6 +1,6 @@
 {
   "name": "language-antlers",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Syntax highlighting for Statamic templates",
   "keywords": [],
   "repository": "https://github.com/addisonhall/language-antlers",
