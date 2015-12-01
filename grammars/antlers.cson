@@ -117,13 +117,13 @@ repository:
       }
     ]
   "statamic-tag-global-variable":
-    match: "(\\G|\\s|\\b)(count|date|datestamp|email_sent|error|errors|expired|extension|file|filename|first|index|zero_index|grouped_date|_is_draft|_is_hidden|current_url|is_current|is_parent|title|children|\\*recursive\\schildren\\*|parent|environment|has_previous|has_next|homepage|is_admin|is_image|is_[a-zA-Z0-9-_:]+|last|last_modified|last_segment|logged_in|next|now|no_results|page_url|permalink|prev|segment_[0-9]+|success|field_errors:[a-zA-Z0-9-_:]+|old_values:[a-zA-Z0-9-_:]+|size|size_bytes|size_kilobytes|size_megabytes|size_gigabytes|name|slug|taxonomy_name|taxonomy_slug|theme_path|total_found|total_results|results|url|url_invalid|username)\\b(?![\\=\\-\\:])"
+    match: "(\\G|\\s|\\b)(count|date|datestamp|email_sent|error|errors|expired|extension|file|filename|first|index|zero_index|grouped_date|_is_draft|_is_hidden|current_url|is_current|is_parent|title|children|\\*recursive\\schildren\\*|parent|environment|has_previous|previous|previous_page|has_next|next|next_page|homepage|is_admin|is_image|is_[a-zA-Z0-9-_:]+|last|last_modified|last_segment|logged_in|now|no_results|page_url|permalink|prev|segment_[0-9]+|success|field_errors:[a-zA-Z0-9-_:]+|old_values:[a-zA-Z0-9-_:]+|size|size_bytes|size_kilobytes|size_megabytes|size_gigabytes|name|slug|taxonomy_name|taxonomy_slug|theme_path|total_found|total_results|results|url|url_invalid|username)\\b(?![\\=\\-\\:])"
     name: "variable.language.statamic"
   "statamic-tag-global-variable-bracketed":
-    match: "\\{\\{(\\s?)(count|date|datestamp|email_sent|error|errors|expired|extension|file|filename|first|index|zero_index|grouped_date|_is_draft|_is_hidden|current_url|is_current|is_parent|title|children|\\*recursive\\schildren\\*|parent|environment|has_previous|has_next|homepage|is_admin|is_image|is_[a-zA-Z0-9-_:]+|last|last_modified|last_segment|logged_in|next|now|no_results|page_url|permalink|prev|segment_[0-9]+|success|field_errors:[a-zA-Z0-9-_:]+|old_values:[a-zA-Z0-9-_:]+|size|size_bytes|size_kilobytes|size_megabytes|size_gigabytes|name|slug|taxonomy_name|taxonomy_slug|theme_path|total_found|total_results|results|url|url_invalid|username)(\\s?)\\}\\}"
+    match: "\\{\\{(\\s?)(count|date|datestamp|email_sent|error|errors|expired|extension|file|filename|first|index|zero_index|grouped_date|_is_draft|_is_hidden|current_url|is_current|is_parent|title|children|\\*recursive\\schildren\\*|parent|environment|has_previous|previous|previous_page|has_next|next|next_page|homepage|is_admin|is_image|is_[a-zA-Z0-9-_:]+|last|last_modified|last_segment|logged_in|now|no_results|page_url|permalink|prev|segment_[0-9]+|success|field_errors:[a-zA-Z0-9-_:]+|old_values:[a-zA-Z0-9-_:]+|size|size_bytes|size_kilobytes|size_megabytes|size_gigabytes|name|slug|taxonomy_name|taxonomy_slug|theme_path|total_found|total_results|results|url|url_invalid|username)(\\s?)\\}\\}"
     name: "variable.language.statamic"
   "statamic-tag-operator":
-    match: "(\\s|^)(or|OR|and|AND|&&|<=|>=|<>|<|>|=|!=|==|===|!==|\\|\\|)\\s"
+    match: "(\\s|^)(or|OR|and|AND|&&|<=|>=|<>|<|>|=|!=|==|===|!==|~|\\|\\|)\\s"
     name: "keyword.operator.logical.statamic"
   "statamic-tag-parameter-known":
     captures:
