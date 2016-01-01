@@ -1,3 +1,13 @@
+## 0.3.0
+* Big overhaul -- doesn't cause errors in Atom anymore
+* Changed a few scope names
+* Modifiers are no longer specific; they are simply matched through regex
+* Included LOTS of new stuff for Statamic 2
+* Added text files with alphabetical tags, parameters and variables for easier maintenance
+
+## 0.2.4
+* Whoops. Missed this one.
+
 ## 0.2.3 - No to PHP!
 * Don't use Antlers for PHP files
 
