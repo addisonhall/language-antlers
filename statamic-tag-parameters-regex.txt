@@ -46,6 +46,7 @@ in|
 include_content|
 include_entries|
 include_home|
+is|
 key|
 limit|
 locate_with|
@@ -56,6 +57,7 @@ max_depth|
 member|
 message|
 min_count|
+name|
 not_in|
 offset|
 open_popup|

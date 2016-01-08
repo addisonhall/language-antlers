@@ -1,3 +1,8 @@
+## 0.3.1
+* Better closing tag for variable pairs
+* Made overall tags recursive (for tags within tags)
+* Added highlighting for the 'var' plugin (https://github.com/michaelhue/statamic-var)
+
 ## 0.3.0
 * Big overhaul -- doesn't cause errors in Atom anymore
 * Changed a few scope names

@@ -8,15 +8,32 @@ name: "Antlers (Statamic Syntax)"
 
 patterns: [
   {
+    include: "#statamic-comments"
+  }
+  {
+    include: "#statamic-overall-tags"
+  }
+  {
+    comment: "This is set to use XHTML standards, but you can change that by changing .strict to .basic for HTML standards"
+    include: "text.html.basic"
+  }
+]
+
+repository:
+
+  "statamic-comments":
     begin: "\\{\\{\\#"
     end: "\\#\\}\\}"
     name: "comment.block.statamic"
-  }
-  {
+
+  "statamic-overall-tags":
     begin: "\\{\\{(\\s?)"
     end: "(\\s?)\\}\\}"
     name: "punctuation.tag.statamic"
     patterns: [
+      {
+        include: "#statamic-overall-tags"
+      }
       {
         include: "#statamic-tag-addon-builtin"
       }
@@ -30,21 +47,13 @@ patterns: [
         include: "#tag-stuff"
       }
     ]
-  }
-  {
-    comment: "This is set to use XHTML standards, but you can change that by changing .strict to .basic for HTML standards"
-    include: "text.html.basic"
-  }
-]
-
-repository:
 
   "statamic-tag-addon-builtin":
-    match: "(404|/?asset(:)?|/?assets(:)?|/?cache|/?can:cp:([a-zA-Z0-9-_:]+)|/?collection(:)?([a-zA-Z0-9-_:]+)?|control_panel_edit_url|count|current_date|date_groups|/?entries(:)?(listing|pagination|map|previous|next|meld)?|exists|get:[a-zA-Z0-9-_:]+|/?get_content|/?get_files|get_post:[a-zA-Z0-9-_:]+|get_value:[a-zA-Z0-9-_:]+|glide|/?in:[a-zA-Z0-9-_:]+|/?is:[a-zA-Z0-9-_:]+|/?location(:)?(map_listing|map_url)?|log(:)?(debug|info|warn|error|fatal)?|login|login_form|logout|logout_url|/?member(:)?(forgot_password_form|listing|pagination|profile|profile_form|register_form|reset_password_form)?|/?nav(:)?(exists|count|breadcrumbs)?|/?obfuscate|old:[a-zA-Z0-9-_\\-:]+|/?pages(:)?(listing|next|previous|meld)?|path|post:[a-zA-Z0-9-_:]+|/?parent:[a-zA-Z0-9-_:]+|partial:[a-zA-Z0-9-_\\-:]+|/?protect:(password_form)|redirect|/?relate:[a-zA-Z0-9-_:]+|/?search:results|switch|/?taxonomy:[a-zA-Z0-9-_:]+|/?taxonomy:listing|theme(:)?([a-zA-Z0-9-_:]+)?|transform|/?user(:)?(can|forgot_password_form|in|is|login_form|logout|logout_url|profile|register_form|reset_password_form)?|/?users)\\b"
+    match: "(404|/?asset(:)?|/?assets(:)?|/?cache|/?can:cp:([a-zA-Z0-9-_:]+)|/?collection(:)?([a-zA-Z0-9-_:]+)?|control_panel_edit_url|count|current_date|date_groups|/?entries(:)?(listing|pagination|map|previous|next|meld)?|exists|get:[a-zA-Z0-9-_:]+|/?get_content|/?get_files|get_post:[a-zA-Z0-9-_:]+|get_value:[a-zA-Z0-9-_:]+|glide|/?in:[a-zA-Z0-9-_:]+|/?is:[a-zA-Z0-9-_:]+|/?location(:)?(map_listing|map_url)?|log(:)?(debug|info|warn|error|fatal)?|login|login_form|logout|logout_url|/?member(:)?(forgot_password_form|listing|pagination|profile|profile_form|register_form|reset_password_form)?|/?nav(:)?(exists|count|breadcrumbs)?|/?obfuscate|old:[a-zA-Z0-9-_\\-:]+|/?pages(:)?(listing|next|previous|meld)?|path|post:[a-zA-Z0-9-_:]+|/?parent:[a-zA-Z0-9-_:]+|partial:[a-zA-Z0-9-_\\-:]+|/?protect:(password_form)|redirect|/?relate:[a-zA-Z0-9-_:]+|/?search:results|switch|/?taxonomy:[a-zA-Z0-9-_:]+|/?taxonomy:listing|theme(:)?([a-zA-Z0-9-_:]+)?|transform|/?user(:)?(can|forgot_password_form|in|is|login_form|logout|logout_url|profile|register_form|reset_password_form)?|/?users|/?var(:)?([a-zA-Z0-9-_:]+)?)\\b"
     name: "meta.function-call.statamic"
 
   "statamic-tag-parameter-known":
-    match: "(action|allow_request_return|as|attr|backspace|between|blur|brightness|cache_bust|center_point|clusters|collection|conditions|contrast|crop|current|depth|destination|do|email|exclude|extension|field|fields|file_date|file_size|file|filename|filter|fit|flip|folder|folders_only|for|format|from|gamma|greyscale|group|groups|group_by_date|height|id|in|include_content|include_entries|include_home|key|limit|locate_with|logged_in_redirect|map_id|match|max_depth|member|message|min_count|not_in|offset|open_popup|orient|page|paginate|param|permission|pixelate|pos_x|pos_y|precision|quality|ratio|redirect|reset_return|reset_url|response|return|reverse|role|roles|rotate|scope|sharpen|show_future|show_hidden|show_past|show_unpublished|since|sort_by|sort_dir|sort|specifically|square|src|tag|taxonomy|to|trim|type|until|upsize|url|use_context|username|version|watermark|what|width|wrap|zoom)=(?!=)"
+    match: "(action|allow_request_return|as|attr|backspace|between|blur|brightness|cache_bust|center_point|clusters|collection|conditions|contrast|crop|current|depth|destination|do|email|exclude|extension|field|fields|file_date|file_size|file|filename|filter|fit|flip|folder|folders_only|for|format|from|gamma|greyscale|group|groups|group_by_date|height|id|in|include_content|include_entries|include_home|is|key|limit|locate_with|logged_in_redirect|map_id|match|max_depth|member|message|min_count|name|not_in|offset|open_popup|orient|page|paginate|param|permission|pixelate|pos_x|pos_y|precision|quality|ratio|redirect|reset_return|reset_url|response|return|reverse|role|roles|rotate|scope|sharpen|show_future|show_hidden|show_past|show_unpublished|since|sort_by|sort_dir|sort|specifically|square|src|tag|taxonomy|to|trim|type|until|upsize|url|use_context|username|version|watermark|what|width|wrap|zoom)=(?!=)"
     name: "support.function.parameter.statamic"
 
   "statamic-tag-native-variable":
@@ -54,7 +63,7 @@ repository:
         name: "variable.language.statamic"
 
   "statamic-variable":
-    match: '(\\w+)(:)?(\\w+)?'
+    match: '(/?\\w+)(:)?(\\w+)?'
     captures:
       "1":
         name: 'variable.other.statamic'
@@ -110,10 +119,19 @@ repository:
   "tag-stuff":
     patterns: [
       {
+        include: "#statamic-constant-numbers"
+      }
+      {
+        include: "#statamic-constant-language"
+      }
+      {
         include: "#statamic-tag-operator"
       }
       {
         include: "#statamic-not-operator"
+      }
+      {
+        include: "#statamic-variable"
       }
       {
         include: "#statamic-var-modifiers"
@@ -126,15 +144,6 @@ repository:
       }
       {
         include: "#statamic-string-single-quoted"
-      }
-      {
-        include: "#statamic-constant-numbers"
-      }
-      {
-        include: "#statamic-constant-language"
-      }
-      {
-        include: "#statamic-variable"
       }
     ]
 

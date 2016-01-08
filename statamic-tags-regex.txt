@@ -44,5 +44,6 @@ switch|
 theme(:)?([a-zA-Z0-9-_:]+)?|
 transform|
 /?user(:)?(can|forgot_password_form|in|is|login_form|logout|logout_url|profile|register_form|reset_password_form )?|
-/?users
+/?users|
+/?var(:)?([a-zA-Z0-9-_:]+)?
 )\\b
