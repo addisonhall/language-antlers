@@ -16,7 +16,7 @@ datestamp|
 email_sent|
 environment|
 error|
-errors|
+/?errors|
 expired|
 extension|
 field_errors:[a-zA-Z0-9-_:]+|

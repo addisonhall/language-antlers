@@ -9,6 +9,7 @@ control_panel_edit_url|
 count|
 current_date|
 date_groups|
+/?email_form|
 /?entries(:)?(listing|pagination|map|previous|next|meld)?|
 exists|
 get:[a-zA-Z0-9-_:]+|

@@ -1,3 +1,7 @@
+## 0.3.3
+* Added tag and parameters for Email Form Plugin (https://github.com/ericbarnes/Statamic-email-form)
+* Better highlighting for native Statamic variables
+
 ## 0.3.2
 * Support for math variable modifiers
 * Decimal numbers are now highlighted
