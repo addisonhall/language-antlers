@@ -73,7 +73,7 @@ repository:
         name: "support.function.statamic"
 
   "statamic-var-modifiers":
-    match: "(\\s)?(\\|)(\\s)?(\\w+(:\\w+)?)+"
+    match: "(\\s)?(\\|)(\\s)?(\\w+(:\\w+)?|(-|\\+|\\*|/|\\^|\\%):(\\d*)?\\.?(\\d+))+"
     captures:
       "2":
         name: "keyword.operator.other.statamic"
@@ -95,7 +95,7 @@ repository:
         name: "constant.language.statamic"
 
   "statamic-constant-numbers":
-    match: "[0-9]"
+    match: "(\\d*)?\\.?(\\d+)"
     name: "constant.numeric.statamic"
 
   "statamic-modifier-pipe":

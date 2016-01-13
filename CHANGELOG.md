@@ -1,3 +1,7 @@
+## 0.3.2
+* Support for math variable modifiers
+* Decimal numbers are now highlighted
+
 ## 0.3.1
 * Better closing tag for variable pairs
 * Made overall tags recursive (for tags within tags)
