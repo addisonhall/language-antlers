@@ -1,10 +1,12 @@
 (\\G|\\s|\\b)(
 _is_draft|
 _is_hidden|
-\\*recursive\\children\\*|
+_site_name|
+_site_url|
+\\*recursive(\\s)children\\*|
 alt|
 basename|
-children|
+/?children|
 collection|
 content|
 count|
@@ -47,6 +49,7 @@ last_modified_timestamp|
 last_modified|
 last_segment|
 last|
+layout_content|
 locale|
 logged_in|
 name|

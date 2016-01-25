@@ -1,3 +1,11 @@
+## 0.3.4
+* Added a few more native Statamic variables
+* Added recursive children variable (cannot capture asterisks!)
+* Added all Statamic 2 modifiers as parameters
+* Better support for 'replace' variable modifier
+* Made 'children' variable work as a tag pair
+* 'var' tag highlighting now only matches 'var' and not 'var_something'
+
 ## 0.3.3
 * Added tag and parameters for Email Form Plugin (https://github.com/ericbarnes/Statamic-email-form)
 * Better highlighting for native Statamic variables
