@@ -1,3 +1,6 @@
+## 0.3.5
+* Adding a settings file so that Statamic comments are created with keyboard shortcut
+
 ## 0.3.4
 * Added a few more native Statamic variables
 * Added recursive children variable (cannot capture asterisks!)

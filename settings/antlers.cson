@@ -1,0 +1,8 @@
+{
+  ".text.html.statamic": {
+    editor: {
+      commentStart: "{{# ",
+      commentEnd: " #}}",
+    }
+  }
+}
