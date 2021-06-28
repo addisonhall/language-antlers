@@ -1,7 +1,5 @@
 fileTypes: [
-  "html"
-  "htm"
-  "xhtml"
+  "antlers.html"
 ]
 
 name: "Antlers (Statamic Syntax)"
